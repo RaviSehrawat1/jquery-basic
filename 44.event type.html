@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radha Rani</title>
+    <script src="jquery.js"></script>
+    <link rel="icon" href="download-radha-krishna-images-hd.jpg">
+  <style>
+#qw{
+   width: 200px;
+   height: 200px;
+   border: 2px solid red;
+   background-color: chocolate;
+}
+h1{
+   color: blueviolet;
+}
+  </style>
+</head>
+<body>
+<div id="qw">
+</div>
+<h1></h1>
+</body>
+<script>
+   $(document).ready(function(){
+      $("#qw").on("click dblclick mouseover mouseout",function(){
+         $("h1").html("EVENT:-"+event.type)
+      })
+   });
+</script>
+</html>

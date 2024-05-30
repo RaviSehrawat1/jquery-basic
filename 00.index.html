@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ravikumar</title>
+    <link
+      rel="shortcut icon"
+      href="radha-krishna-3d-cartoon-ix2i3juyawm36j64.jpg"
+      type="image/x-icon"
+    />
+    <script src="jquery.js"></script>
+    <style>
+      div {
+        width: 400px;
+        height: 300px;
+        border: 2px solid red;
+
+        background-color: blueviolet;
+        position: relative;
+        box-shadow: 2px 2px 20px greenyellow;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="2">
+      <tr>
+        <td>Name</td>
+        <td><input type="text" name="" id="as1" /></td>
+        <td><div id="as2"></div></td>
+      </tr>
+    </table>
+    <script>
+      $(() => {
+        $("#as1").focus(()=>{
+          $.ajax({url:"./ravi.xml",type:'xml',method:'get',success:(response,status,xhr)=>{
+            if(xhr.status==200){
+              $("div").html(xhr.status+"<br>"+xhr.state()+"<br>"+xhr.statusText+"<br>"+$(response).find('Key').text()+$(response).find('Text').text())
+            }
+           else{
+            $("div").html(xhr.status+"<br>"+xhr.state()+"<br>"+xhr.statusText+"<br>"+$(response).find('Key').text()+$(response).find('Text').text())
+            }
+          }})
+        })
+        $("#as1").blur(()=>{
+          $("#as2").text("")
+        })
+      });
+    </script>
+  </body>
+</html>

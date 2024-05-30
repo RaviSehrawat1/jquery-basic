@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  <style>
+    #par1{
+        width: 500px;
+        height: 200px;
+        background-color: blueviolet;
+        border: 2px solid red;
+        padding: 10px;
+        box-sizing: border-box;
+        left: 20px;
+    }
+  </style>
+</head>
+<body>
+<div id="par1" class="ra">
+    <h1>frist</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, ullam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni aut sapiente quasi necessitatibus eveniet doloremque excepturi quisquam ab possimus cupiditate.</p>
+</div>
+<ul class="da">
+    <li>ravi</li>
+    <li>kumar</li>
+    <li>devender</li>
+    <li>sehrawat</li>
+    <li>satvir</li>
+    <li>singh</li>
+</ul>
+</body>
+<script>
+$(()=>{
+  $("p").mouseenter(()=>{
+    $("h1").css("color","red")
+  });
+  $("p").mouseleave(()=>{
+    $("h1").css("color","green")
+  });
+  $("p").click(()=>{
+    $("h1").css("color","yellow")
+  });
+  $("p").dblclick(()=>{
+    $("h1").css("color","pink")
+  });
+  $("p").contextmenu(()=>{
+    $("h1").css("color","yellowgreen")
+  });
+})
+</script>
+</html>

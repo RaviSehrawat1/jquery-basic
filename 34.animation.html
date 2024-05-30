@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radha Rani</title>
+    <script src="jquery.js"></script>
+    <link rel="icon" href="download-radha-krishna-images-hd.jpg">
+  <style>
+    div{
+        width: 400px;
+        height: 200px;
+        background-color: blueviolet;
+        border: 2px solid red;
+        padding: 20px;
+        box-sizing: border-box;
+        position: relative;
+    }
+  </style>
+</head>
+<body>
+    <div>
+        <h1 class="rav">ravikumar</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolore neque quod aperiam</p>
+    </div>
+    <button id="op1">animation</button>
+</body>
+<script>
+    $(document).ready(function(){
+        $("#op1").click(function(){
+           $("div").animate({width:"toggle",
+            left:400,
+            top:400},2000,()=>{console.log("animation satrt")});
+         // $("div").animate({width:200},2000,()=>{console.log("animation satrt")});
+         // $("div").animate({left:200},2000,()=>{console.log("animation satrt")});
+         // $("div").animate({top:200},2000,()=>{console.log("animation satrt")});
+         // $("div").animate({left:400},2000,()=>{console.log("animation satrt")});
+         // $("h1").animate({fontSize:40},2000,()=>{console.log("animation satrt")});
+
+        });
+    });
+</script>
+</html>

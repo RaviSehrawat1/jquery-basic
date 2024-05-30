@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+  <style>
+    div{
+        width: 450px;
+        height: 150px;
+        border: 2px solid red;
+        background-color: blueviolet;
+    }
+    #tavi{
+        width: 450px;
+        height: 150px;
+        background-color: chartreuse;
+        border: 2px solid rgb(255, 230, 0);
+    }
+  </style>
+</head>
+<body>
+    <div>
+        <h1>ravikumar</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, odit.</p>
+    </div>
+    <br><br>
+    <button id="asd">set text</button>
+    <button id="as">set html</button>
+    <button id="asu">set attr</button>
+</body>
+<script>
+    $(document).ready(function(){
+       $("#asd").click(function(){
+        $("h1").text("devender");
+       });
+       $("#as").click(function(){
+        $("p").html("<i>my name is ravikumar my father name is satvir singh <b> and my brother name is devender</b> sehrawat</i>");
+       })
+       $("#asu").click(function(){
+        $("div").attr("id","tavi");
+       })
+    })
+</script>
+</html>

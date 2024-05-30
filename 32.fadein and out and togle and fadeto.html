@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radha Rani</title>
+    <script src="jquery.js"></script>
+    <link rel="icon" href="download-radha-krishna-images-hd.jpg">
+  <style>
+    div{
+        width: 400px;
+        height: 200px;
+        background-color: blueviolet;
+        border: 2px solid red;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+    <div>
+        <h1 class="rav">ravikumar</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolore neque quod aperiam laboriosam porro incidunt reiciendis sint excepturi distinctio?</p>
+    </div>
+    <button id="op1">fadein</button>
+    <button id="op2">fadeout</button>
+    <button id="op3">fadetogale</button>
+    <button id="op4">fadeto</button>
+</body>
+<script>
+    $(document).ready(function(){
+        $("#op1").click(function(){
+           $("div").fadeIn(2000);
+
+        });
+        $("#op2").click(function(){
+           $("div").fadeOut(2000);
+
+        });
+        $("#op3").click(function(){
+           $("div").fadeToggle(2000); 
+        });
+        $("#op4").click(function(){
+           $("div").fadeTo(2000,.5,function(){
+            console.log("fade to...")
+           }); 
+        });
+    });
+</script>
+</html>

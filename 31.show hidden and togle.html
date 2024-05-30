@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radha Rani</title>
+    <script src="jquery.js"></script>
+    <link rel="icon" href="download-radha-krishna-images-hd.jpg">
+  <style>
+    div{
+        width: 400px;
+        height: 200px;
+        background-color: blueviolet;
+        border: 2px solid red;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+    <div>
+        <h1 class="rav">ravikumar</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolore neque quod aperiam laboriosam porro incidunt reiciendis sint excepturi distinctio?</p>
+    </div>
+    <button id="op1">hidden</button>
+    <button id="op2">show</button>
+    <button id="op3">togale</button>
+    <button id="op4">hidden slow</button>
+    <button id="op5">show slow</button>
+    <button id="op6">togale slow</button>
+</body>
+<script>
+    $(document).ready(function(){
+        $("#op1").click(function(){
+           $("h1").hide();
+
+        });
+        $("#op2").click(function(){
+           $("h1").show();
+
+        });
+        $("#op3").click(function(){
+           $("h1").toggle("fast"); //its value is "slow","fast","1000","miesecond"
+
+        });
+        $("#op4").click(function(){
+           $("h1").hide(9000);
+
+        });
+        $("#op5").click(function(){
+           $("h1").show("");
+
+        });
+        $("#op6").click(function(){
+           $("div").toggle("slow",function(){
+            console.log("togle are call");//callback function
+           });
+
+        });
+    
+    });
+</script>
+</html>

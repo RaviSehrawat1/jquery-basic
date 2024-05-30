@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+<form action="" id="sform">
+    <label>
+        Name:- <input type="text" name="name" id="name" autocomplete="none">
+    </label><br><br>
+    <label>
+        Email:- <input type="email" name="em" id="em">
+    </label><br><br>
+    Gender:- 
+        <input type="radio" name="qw" id="ma">mail
+        <input type="radio" name="qw" id="fe">femail
+    <br><br>
+    <label>
+        county:-   <select name="" id="sele">
+            <option value="in">india</option>
+            <option value="ne">nepal</option>
+            <option value="pk" selected>pakastan</option>
+            <option value="us">usa</option>
+            <option value="rusia">rusia</option>
+        </select>
+    </label><br><br>
+    <input type="submit" name="sub" id="su">
+    <input type="reset" name="res" id="re">
+</form>
+<div id="qwer" style="border: 2px solid red;"></div>
+</body>
+<script>
+$(document).ready(function(){
+    $("#name,#em,#sele").focus(function(){
+        $(this).css('backgroundColor','yellow')
+    });
+    $("#name,#em,#sele").blur(function(){
+        $(this).css('backgroundColor','lightgreen')
+    });
+    $("#name,#em,#sele").select(function(){
+        $(this).css('backgroundColor','red')
+    });
+    $("#sele").change(function(){
+        $(this).css('backgroundColor','blue')
+        var h=$(this).val();
+        $("#qwer").html(h);
+    });
+    $("#sform").submit(function(){
+        alert("successful complete form...")
+    });
+});
+</script>
+</html>

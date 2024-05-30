@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radha Rani</title>
+    <script src="jquery.js"></script>
+    <link rel="icon" href="download-radha-krishna-images-hd.jpg">
+  <style>
+    #ravi{
+        width: 450px;
+        /* height: 150px; */
+        padding: 20px;
+        box-sizing: border-box;
+        border: 2px solid
+         green;
+         background-color: blueviolet;
+         h1,h4{
+            color: chartreuse;
+            text-align: center;
+         }
+    }
+  </style>
+</head>
+<body>
+    <div id="ravi">
+        <span>ravikumar</span>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing  elit. Dolores, aut.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, aut.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, aut.</p>
+    </div>
+    <br><br>
+    <button id="asd" style="background-color: chartreuse;border-radius: 20px;">wrap</button>
+    <button id="as" style="background-color: chartreuse;border-radius: 20px;">unwrap</button>
+</body>
+<script>
+    $(document).ready(function(){
+        $("#asd").click(function(){
+            $("span").wrap("<h1></h1>")
+        })
+        $("#as").click(function(){
+            $("span").unwrap("")
+        })
+    });
+</script>
+</html>

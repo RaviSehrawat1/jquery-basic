@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radha Rani</title>
+    <script src="jquery.js"></script>
+    <link rel="icon" href="download-radha-krishna-images-hd.jpg">
+  <style>
+    div{
+        width: 400px;
+        height: 200px;
+        background-color: blueviolet;
+        border: 2px solid red;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+    <div>
+        <h1 class="rav">ravikumar</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolore neque quod aperiam laboriosam porro incidunt reiciendis sint excepturi distinctio?</p>
+    </div>
+    <button id="op">hassclass</button>
+</body>
+<script>
+    $(document).ready(function(){
+        $("#op").click(function(){
+           var t= $("h1").hasClass("ravi");
+           if(t==true){
+            console.log("ravi class are present in this tage")
+           }
+           else{
+            console.log("ravi class are not present in this tage")
+           }
+
+        })
+    
+    });
+</script>
+</html>

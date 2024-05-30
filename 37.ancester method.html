@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radha Rani</title>
+    <script src="jquery.js"></script>
+    <link rel="icon" href="download-radha-krishna-images-hd.jpg">
+  <style>
+   *{
+      margin: 0%;
+   }
+   body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+   }
+   #outer-most{
+      border: 2px solid red;
+      background-color: blueviolet;
+      width: 900px;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   #outer{
+      border: 2px solid rgb(81, 255, 0);
+      background-color: rgb(223, 226, 43);
+      width: 700px;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   #inner{
+      border: 2px solid rgb(4, 0, 255);
+      background-color: rgb(226, 43, 211);
+      width: 500px;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+      div{
+         width:80px;
+         height: 100px;
+         border: 2px solid red;
+         text-align: center;
+         line-height: 100px;
+         background-color: chocolate;
+      }
+      
+   }
+  </style>
+</head>
+<body>
+   <div id="outer-most" class="test">
+      <div id="outer" style="position: relative;" class="test">
+         <div id="inner" class="test">
+            <div id="ida">A</div>
+            <div id="idb">B</div>
+            <div id="idc">C</div>
+            <div id="idd">D</div>
+            <div id="ide">E</div>
+         </div>
+      </div>
+   </div>
+</body>
+<script>
+   $(document).ready(function(){
+      // $("#inner").parent().css("backgroundColor","blue");
+      // $("#inner").parents("#outer-most").css("backgroundColor","blue");
+      // $("#idb").parentsUntil("#outer-most").css("backgroundColor","pink");
+      $("#idb").offsetParent().css("backgroundColor","green");
+      // $("#idb").closest(".test").css("backgroundColor","pink");
+   })
+</script>
+</html>

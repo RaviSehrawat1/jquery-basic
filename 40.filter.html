@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radha Rani</title>
+    <script src="jquery.js"></script>
+    <link rel="icon" href="download-radha-krishna-images-hd.jpg">
+  <style>
+   #frist{
+      width: 450px;
+      border: 2px solid red;
+      background-color: blueviolet;
+      padding: 20px;
+      box-sizing: border-box;
+   }
+   #second{
+      width: 450px;
+      border: 2px solid rgb(9, 255, 0);
+      background-color: rgb(223, 226, 43);
+      padding: 20px;
+      box-sizing: border-box;
+   }
+  </style>
+</head>
+<body>
+<div id="frist">
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, harum.</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, harum.</p>
+</div>
+<ul>
+   <li>ravi</li>
+   <li>kumar</li>
+   <li>devender</li>
+   <li>sehrawat</li>
+   <li>satvir</li>
+   <li>singh</li>
+</ul>
+<div id="second">
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, harum.</p>
+   <p class="ravi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, harum.</p>
+</div>
+</body>
+<script>
+   $(document).ready(function(){
+      // $("#frist p").last().css("color","red");
+      // $("#frist p").first().css("color","pink");
+      // $("#second p").eq(1).css("color","red");
+      // $("p").filter(".ravi").css("color","red"); //1 methos
+      // $("p.ravi").css("color","red");//2 mthod
+      // $("p").not(".ravi").css("color","red");
+      // $("ul li").slice(3).css("color","red"); //1 method
+      // $("ul li").slice(2,4).css("color","red"); //2 method
+      $("p").slice(1,3).css("color","red"); //2 method with p tage
+   })
+</script>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radha Rani</title>
+    <script src="jquery.js"></script>
+    <link rel="icon" href="download-radha-krishna-images-hd.jpg">
+  <style>
+#qwe{
+   width: 400px;
+   height: 200px;
+   border: 2px solid red;
+   background-color: chocolate;
+   padding: 15px;
+   box-sizing: border-box;
+}
+  </style>
+</head>
+<body>
+<div id="qwe">
+   <p></p>
+   <button id="op">next</button>
+</div>
+</body>
+<script>
+   $(document).ready(function(){
+      $("#op").click(function(){
+         $.get("./ravi.json",function(response,status,xhr){
+            var ravi=response[0].name;
+            ravi+=response[0].age+"<br>";
+            ravi+=response[0].city+"<br>";
+            ravi+=response[1].name;
+            ravi+=response[1].age;
+            ravi+=response[1].city;
+            ravi+=response[2].name;
+            ravi+=response[2].age;
+            ravi+=response[2].city;
+            $("p").html(ravi+"<br><br>");
+         },"json");
+      });
+   });
+</script>
+</html>

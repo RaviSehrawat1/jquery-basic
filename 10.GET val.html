@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+  <style>
+    div{
+        width: 200px;
+        height: 200px;
+        border: 2px solid red;
+        background-color: blueviolet;
+    }
+  </style>
+</head>
+<body>
+    <form action="" id="sform">
+        <label>
+            Name:- <input type="text" name="name" id="name" autocomplete="none">
+        </label><br><br>
+        <label>
+            Email:- <input type="email" name="em" id="em">
+        </label><br><br>
+        <label>
+            county:-   <select name="" id="sele">
+                <option value="india" selected>india</option>
+                <option value="ne">nepal</option>
+                <option value="pk" >pakastan</option>
+                <option value="us">usa</option>
+                <option value="rusia">rusia</option>
+            </select>
+        </label><br><br>
+        <input type="submit" name="sub" id="su">
+        <input type="reset" name="res" id="re">
+    </form>
+</body>
+<script>
+    $(document).ready(function(){
+        $("#sform").submit(function(){
+           var d= $("#name").val();
+           var y= $("#em").val();
+           var p= $("#sele").val();
+           alert(`name:-${d}  mail:-${y}  country:-${p}`)
+        });
+    })
+</script>
+</html>

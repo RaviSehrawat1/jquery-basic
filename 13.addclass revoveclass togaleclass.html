@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radha Rani</title>
+    <script src="jquery.js"></script>
+    <link rel="icon" href="download-radha-krishna-images-hd.jpg">
+  <style>
+    div{
+        width: 450px;
+        height: 150px;
+        border: 2px solid red;
+        background-color: blueviolet;
+    }
+    #tavi{
+        width: 450px;
+        height: 150px;
+        background-color: chartreuse;
+        border: 2px solid rgb(255, 230, 0);
+    }
+    .as1{
+        color: brown;
+    }
+    .as2{
+        background-image:url(download-radha-krishna-images-hd.jpg);
+        color: transparent;
+        background-clip: text;
+    }
+  </style>
+</head>
+<body>
+    <div>
+        <h1>ravikumar</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, odit.</p>
+    </div>
+    <br><br>
+    <button id="asd">addclass</button>
+    <button id="as">removexlass</button>
+    <button id="asu">togaleclass</button>
+</body>
+<script>
+    $(document).ready(function(){
+       $("#asd").click(function(){
+        $("h1").addClass("as1");
+       });
+       $("#as").click(function(){
+        $("h1").removeClass("as1");
+       });
+
+       $("#asu").click(function(){
+        $("h1").toggleClass("as2");
+       })
+    })
+</script>
+</html>

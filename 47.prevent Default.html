@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radha Rani</title>
+    <script src="jquery.js"></script>
+    <link rel="icon" href="download-radha-krishna-images-hd.jpg">
+  <style>
+#qw{
+   width: 400px;
+   height: 200px;
+   border: 2px solid red;
+   background-color: chocolate;
+   padding: 15px;
+   box-sizing: border-box;
+}
+h1{
+   color: blueviolet;
+}
+  </style>
+</head>
+<body>
+<div id="qw">
+   <a href="http://www.google.com" id="qwa">prevent</a>
+   <a href="http://www.google.com">NOprevent</a>
+</div>
+<h2></h2>
+</body>
+<script>
+   $(document).ready(function(){
+      $("#qwa").on("click",function(event){
+         event.preventDefault();
+         $("h2").html(event.isDefaultPrevented());
+      });
+   });
+</script>
+</html>

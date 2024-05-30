@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radha Rani</title>
+    <script src="jquery.js"></script>
+    <link rel="icon" href="download-radha-krishna-images-hd.jpg">
+  <style>
+    div{
+        width: 450px;
+        height: 150px;
+        padding: 20px;
+        box-sizing: border-box;
+        border: 2px solid
+         green;
+         background-color: blueviolet;
+         overflow: scroll;
+         h1{
+            color: chartreuse;
+         }
+    }
+  </style>
+</head>
+<body>
+    <div>
+        <h1>ravikumar</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, odit.</p>
+    </div>
+    <br><br>
+    <button id="asd" style="background-color: chartreuse;border-radius: 20px;">append</button>
+    <button id="as" style="background-color: chartreuse;border-radius: 20px;">prepand</button>
+</body>
+<script>
+    $(document).ready(function(){
+       $("#as").click(function(){
+        $("div").prepend("<h1>devender</h1>")
+       });
+       $("#asd").click(function(){
+        $("div").append("<h1>satvir</h1>")
+       })
+    });
+</script>
+</html>

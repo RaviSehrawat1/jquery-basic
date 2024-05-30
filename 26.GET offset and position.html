@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radha Rani</title>
+    <script src="jquery.js"></script>
+    <link rel="icon" href="download-radha-krishna-images-hd.jpg">
+  <style>
+    #ravi{
+        box-sizing: border-box;
+        border-color: chartreuse;
+        border-style: dotted;
+         background-color: blueviolet;
+         padding: 20px;
+         border-width: 20px;
+         h1,h4{
+            color: chartreuse;
+            text-align: center;
+         }
+         p{
+            border: 2px solid red;
+            padding: 20px;
+         }
+    }
+  </style>
+</head>
+<body>
+    <div id="ravi">
+        <h1>ravikumar</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing  elit. Dolores, aut. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam dolor distinctio dolore neque? Deserunt et accusantium autem odit obcaecati tempora, maiores quidem ipsum fuga doloribus assumenda voluptas dolores praesentium amet ullam commodi dignissimos sunt natus magnam distinctio! Ipsa, veritatis ea aspernatur earum error illo ex praesentium sequi, similique, quia dignissimos!</p>
+    </div>
+    <br><br>
+    <button id="off">offset</button>
+    <button id="pos">position</button>
+</body>
+<script>
+    $(document).ready(function(){
+        $("#off").click(function(){
+            var q=$("p").offset();
+            console.log(q);
+            console.log("TOP:-"+q.top);
+            console.log("LEFT:-"+q.left);
+        });
+        $("#pos").click(function(){
+            var o=$("p").position();
+            console.log(o);
+            console.log("TOP:-"+o.top);
+            console.log("LEFT:-"+o.left);
+        })
+    });
+</script>
+</html>

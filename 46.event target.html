@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radha Rani</title>
+    <script src="jquery.js"></script>
+    <link rel="icon" href="download-radha-krishna-images-hd.jpg">
+  <style>
+#qw{
+   width: 400px;
+   height: 200px;
+   border: 2px solid red;
+   background-color: chocolate;
+   padding: 15px;
+   box-sizing: border-box;
+}
+h1{
+   color: blueviolet;
+}
+  </style>
+</head>
+<body>
+<div id="qw">
+   <h1>ravikumar</h1>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum placeat eos a totam. Facere temporibus ex voluptates reiciendis, deleniti minima!</p>
+   <button>text button</button>
+</div>
+<h2></h2>
+</body>
+<script>
+   $(document).ready(function(){
+      $("#qw").on("click",function(event){
+         $("h2").html("Target Element:-"+event.target.nodeName)
+         var a=event.target.nodeName;
+         if(a=="P"){
+            $("p").css("color","red")
+         }
+      });
+   });
+</script>
+</html>

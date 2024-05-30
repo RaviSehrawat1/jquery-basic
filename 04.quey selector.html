@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  <style>
+    #par1{
+        width: 500px;
+        height: 200px;
+        background-color: blueviolet;
+        border: 2px solid red;
+        padding: 10px;
+        box-sizing: border-box;
+        left: 20px;
+    }
+  </style>
+</head>
+<body>
+<div id="par1" class="ra">
+    <h1>frist</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, ullam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni aut sapiente quasi necessitatibus eveniet doloremque excepturi quisquam ab possimus cupiditate.</p>
+</div>
+<ul class="da">
+    <li>ravi</li>
+    <li>kumar</li>
+    <li>devender</li>
+    <li>sehrawat</li>
+    <li>satvir</li>
+    <li>singh</li>
+</ul>
+</body>
+<script>
+$(()=>{
+    // var a=$("#par1").html(); //by id
+    // console.log(a); 
+    // var b=$("p").html();//by name
+    // console.log(b); 
+    // var c=$(".ra").html();//by class
+    // console.log(c); 
+    // var d=$("*").html();//by whole
+    // console.log(d); 
+    // var b=$("div h1").html();//by inner tage
+    // console.log(b);
+    // var b=$("ul li").html();//by inner tage
+    // console.log(b); 
+    // var b=$("li:first").html();//by frist
+    // console.log(b); 
+    // var b=$("li:last").html();//by last
+    // console.log(b); 
+    // var b=$("li:first-child").html();//by frist-child
+    // console.log(b); 
+    // var b=$("li:last-child").html();//by frist-child
+    // console.log(b); 
+    // var b=$("li:even").css("color","green");//by even
+    // var b=$("li:odd").css("color","red");//by odd
+    // var b=$("p,li").css("color","green");//multiple selecter by name
+    // var b=$(".ra,.da").css("color","yellowgreen");//multiple selecter by class name
+    // var b=$("li:eq(2)").css("color","yellowgreen");//spacfic selected with the help of number
+    // var b=$("li:gt(2)").css("color","yellowgreen");//next fot the index number
+    var b=$("li:lt(2)").css("fontSize","70px");//previous fot the index number
+    
+    
+})
+</script>
+</html>

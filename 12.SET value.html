@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <form action="" id="sform">
+        <label>
+            Name:- <input type="text" name="name" id="name" autocomplete="none">
+        </label><br><br>
+        <label>
+            Email:- <input type="email" name="em" id="em">
+        </label><br><br>
+        <input type="submit" name="sub" id="su">
+        <input type="reset" name="res" id="re">
+    </form> 
+<script>
+$(document).ready(function(){
+    $("#name").val("devender sehrawat");
+    $("#em").val("devender@gmail.com");
+})
+</script> 
+</body>
+</html>

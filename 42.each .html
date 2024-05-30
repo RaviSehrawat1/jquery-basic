@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radha Rani</title>
+    <script src="jquery.js"></script>
+    <link rel="icon" href="download-radha-krishna-images-hd.jpg">
+  <style>
+   li::marker{
+      color: blueviolet;
+   }
+   ul{
+      color: brown;
+   }
+  </style>
+</head>
+<body>
+<ul>
+   <li>ravi</li>
+   <li>kumar</li>
+   <li>devender</li>
+   <li>sehrawat</li>
+   <li>satvir</li>
+   <li>singh</li>
+</ul>
+</body>
+<script>
+   $(document).ready(function(){
+      $("li").each(function(){
+         console.log($(this).text("radha"))
+      })
+   });
+</script>
+</html>

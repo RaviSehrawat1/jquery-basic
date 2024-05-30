@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radha Rani</title>
+    <script src="jquery.js"></script>
+    <link rel="icon" href="download-radha-krishna-images-hd.jpg">
+  <style>
+    #ravi{
+        width: 450px;
+        padding: 20px;
+        box-sizing: border-box;
+        border: 20px solid
+         green;
+         background-color: blueviolet;
+         margin: 20px;
+         h1,h4{
+            color: chartreuse;
+            text-align: center;
+         }
+    }
+  </style>
+</head>
+<body>
+    <div id="ravi">
+        <h1>ravikumar</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing  elit. Dolores, aut.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, aut.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, aut.</p>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        var a=$("#ravi").width();
+        console.log("content width:-"+a);
+        var a=$("#ravi").height();
+        console.log("content height:-"+a);
+        var a=$("#ravi").innerWidth();
+        console.log("inner width:-"+a);
+        var a=$("#ravi").innerHeight();
+        console.log("inner height:-"+a);
+        var a=$("#ravi").outerWidth();
+        console.log("outer width:-"+a);
+        var a=$("#ravi").outerHeight();
+        console.log("outer height:-"+a);
+        var a=$("#ravi").outerWidth(true);
+        console.log("outerMargin width:-"+a);
+        var a=$("#ravi").outerHeight(true);
+        console.log("outerMargin height:-"+a);
+    });
+</script>
+</html>
